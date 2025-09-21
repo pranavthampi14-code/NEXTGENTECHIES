@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ClearLaw – AI Legal Document Assistant</title>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+
+<body>
+  <header class="site-header animate__animated animate__fadeInDown">
+    <img src="logo-img.jpg" alt="ClearLaw Logo" class="logo" />
+    <div class="tagline">
+      <h1>ClearLaw</h1>
+      <p>Your AI Assistant for Understanding Complex Legal Documents</p>
+    </div>
+  </header>
+
+  <main class="container animate__animated animate__fadeInUp">
+    <div class="card">
+      <p>Upload a legal document (PDF/image). We'll extract the text and explain it in simple English using AI.</p>
+      <input id="fileInput" type="file" accept=".pdf,image/*" />
+      <button id="uploadBtn">Upload & OCR</button>
+      <p id="status"></p>
+    </div>
+
+    <div class="card">
+      <h3>Extracted Text</h3>
+      <pre id="extracted">No text yet.</pre>
+    </div>
+
+    <div class="card">
+      <h3>Demystify with AI</h3>
+      <p>Edit the extracted text below (optional) and click "Demystify".</p>
+      <textarea id="inputText"></textarea><br><br>
+      <button id="summon">Demystify</button>
+      <p id="summarystatus"></p>
+      <h4>AI Output</h4>
+      <pre id="modelOut">No output yet.</pre>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 ClearLaw. All rights reserved.</p>
+  </footer>
+
+  <!-- Your existing JavaScript here -->
+  <script>
+    // Same JS from earlier, unchanged
+  </script>
+</body>
+</html>
